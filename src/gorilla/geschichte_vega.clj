@@ -15,7 +15,7 @@
   []
   {:marks [{:type "path"
             :from {:data "links"}
-            :encode
+            :properties
             {:enter {:path {:field "data.path"}
                      :strokeWidth {:value 2}
                      :stroke {:r {:field "data.r"}
@@ -24,7 +24,7 @@
                      #_{:value "grey"}}}}
            {:type "symbol"
             :from {:data "nodes"}
-            :encode
+            :properties
             {:enter {:x {:field "data.x"}
                      :y {:field "data.y"}
                      :fill {:r {:field "data.r"}
@@ -36,7 +36,7 @@
                       :stroke [:value "transparent"]}}}
            {:type "text"
             :from {:data "node-labels"}
-            :encode
+            :properties
             {:enter {:x {:field "data.x"}
                      :y {:field "data.y"}
                      :align {:value  "center"}
@@ -46,7 +46,7 @@
              :update {:text {:field "data.value"}}}}
            {:type "text"
             :from {:data "labels"}
-            :encode
+            :properties
             {:enter {:x {:field "data.x"}
                      :y {:field "data.y"}
                      :align {:value  "right"}
